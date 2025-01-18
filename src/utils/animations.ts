@@ -19,7 +19,7 @@ interface AnimationProps {
 export const animateWithGsap = (
   target: string | Element,
   animationProps: AnimationProps,
-  scrollProps: ScrollProps,
+  scrollProps?: ScrollProps,
 ) => {
   gsap.to(target, {
     ...animationProps,

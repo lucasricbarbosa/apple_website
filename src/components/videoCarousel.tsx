@@ -67,6 +67,7 @@ export const VideoCarousel = () => {
     e: React.SyntheticEvent<HTMLVideoElement, Event>,
   ) => {
     setLoadedData((prev) => [...prev, e]);
+    console.log(i);
   };
 
   useEffect(() => {
